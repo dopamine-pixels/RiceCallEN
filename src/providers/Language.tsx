@@ -25,7 +25,7 @@ interface LanguageProviderProps {
 }
 
 const LanguageProvider = ({ children }: LanguageProviderProps) => {
-  const [language, setLanguage] = useState<LanguageKey>('tw');
+  const [language, setLanguage] = useState<LanguageKey>('en');
   const translation = translations[language];
 
   const getPermissionText = (permission: number): string => {
